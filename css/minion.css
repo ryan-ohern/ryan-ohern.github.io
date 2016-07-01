@@ -1,0 +1,218 @@
+#container {
+  width: 600px;
+  height: 230px;
+  border: solid black;
+  margin: auto;
+  position: relative
+}
+
+.head {
+  width: 150px;
+  height: 170px;
+  background-color: yellow;
+  border-radius: 70px 70px 0px 0px;
+  border: 1px solid black;
+  position: absolute;
+  left: 260px;
+  bottom: 0px;
+
+  /*-- Head Color Change --*/
+
+  animation-name: color-change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+.goggles {
+  width: 154px;
+  height: 70px;
+  border: 2px solid transparent;
+  position: absolute;
+  top: 45px;
+  left: -3px;
+}
+
+#goggles-strip-1 {
+  width: 154px;
+  height: 10px;
+  background-color: grey;
+  border: 1px solid black;
+  position: absolute;
+  top: 22px;
+}
+
+#goggles-strip-2 {
+  width: 154px;
+  height: 10px;
+  background-color: grey;
+  border: 1px solid black;
+  position: absolute;
+  top: 10px;
+  left: -1px;
+}
+
+#goggles-circle-left {
+  width: 75px;
+  height: 70px;
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  left: 4px;
+}
+
+#left-eye {
+  width: 60px;
+  height: 55px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+}
+
+#left-eye-color {
+  width: 20px;
+  height: 20px;
+  background-color: #b35900;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 22px;
+    animation-name: eyes-move;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+#left-pupil {
+  width: 9px;
+  height: 9px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+#goggles-circle-right {
+  width: 75px;
+  height: 70px;
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: -35px;
+  left: 72px;
+}
+
+#right-eye {
+  width: 60px;
+  height: 55px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+}
+
+#right-eye-color {
+  width: 20px;
+  height: 20px;
+  background-color: #b35900;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 22px;
+  animation-name: eyes-move;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+#right-pupil {
+  width: 9px;
+  height: 9px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.mouth {
+  width: 30px;
+  height: 5px;
+  border: solid 2px black;
+  border-bottom: transparent;
+  border-radius: 30px 30px 0 0;
+  position: absolute;
+  top: 150px;
+  left: 58px;
+}
+
+#hair {
+  width: 40px;
+  height: 40px;
+  border: solid 2px transparent;
+  position: absolute;
+  top: -42px;
+  left: 52px;
+}
+
+#hair-piece-3 {
+  width: 25px;
+  height: 40px;
+  border: solid 3px black;
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-radius: 30px 0 0 0;
+  position: absolute;
+  left: 22px;
+}
+
+#hair-piece-1 {
+  width: 25px;
+  height: 40px;
+  border: solid 3px black;
+  border-top: transparent;
+  border-left: transparent;
+  border-bottom: transparent;
+  border-radius: 0px 30px 0 0;
+  position: absolute;
+  left: -7px;
+}
+
+#hair-piece-2 {
+  width: 25px;
+  height: 40px;
+  border: solid 3px black;
+  border-top: transparent;
+  border-left: transparent;
+  border-bottom: transparent;
+  border-radius: 0px 10px 0 0;
+  position: absolute;
+  left: -5px;
+}
+
+/* The animation code */
+@keyframes color-change {
+    0%   {background-color: yellow;}
+    50%  {background-color: purple;}
+    100% {background-color: yellow;}
+}
+
+@keyframes eyes-move {
+    0%   {left:22px; top:30px;}
+    25%  {left:22px; top:22px;}
+    50%  {left:12px; top:36px;}
+    75%  {left:12px; top:24px;}
+    100% {left:22px; top:30px;}
