@@ -223,6 +223,11 @@ section.success {
     padding-top: 75px;
   }
 }
+
+#about-me-profile {
+  margin-bottom: 40px;
+}
+
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
