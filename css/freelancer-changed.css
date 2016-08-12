@@ -534,3 +534,11 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+
+/*.portfolio-item {
+  box-shadow: 0px 3px 3px 1px #dddddd;
+}*/
+
+.img-shadow {
+  box-shadow: 0px 4px 2px 1px #dddddd;
+}
